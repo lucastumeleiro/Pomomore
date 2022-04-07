@@ -10,9 +10,7 @@
     "typecheck": "tsc --project tsconfig.json --noEmit",
     "test": "jest",
     "test:watch": "yarn test --watch",
-    "generate": "yarn plop --plopfile ./generators/plopfile.js",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public"
+    "generate": "yarn plop --plopfile ./generators/plopfile.js"
   },
   "dependencies": {
     "@vercel/node": "^1.9.0",
