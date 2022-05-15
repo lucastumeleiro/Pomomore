@@ -14,36 +14,3 @@ export default function Dashboard() {
     </>
   )
 }
-
-// export const getServerSideProps: GetServerSideProps = async ({
-//   req,
-//   params
-// }) => {
-//   console.log(req)
-//   // console.log(params)
-//   return {
-//     props: {}
-//   }
-// }
-
-// export const getServerSideProps: GetServerSideProps = async ({
-//   req
-//   // params
-// }) => {
-//   const { level, currentExperience, challengesCompleted } = req.cookies
-//   // const { username } = params
-//   // const response = await fetch(`https://api.github.com/users/${username}`)
-//   // const user = await response.json()
-
-//   return {
-//     // props: {
-//     //   level: Number(level),
-//     //   currentExperience: Number(currentExperience),
-//     //   challengesCompleted: Number(challengesCompleted)
-//     //   // user: {
-//     //   //   name: user.name,
-//     //   //   avatarUrl: user.avatar_url
-//     //   // }
-//     // }
-//   }
-// }

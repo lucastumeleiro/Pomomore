@@ -1,6 +1,7 @@
 import { useTheme } from 'contexts/ThemeContext'
 
-import { Github } from '@styled-icons/bootstrap/Github'
+
+import { Google } from 'styled-icons/bootstrap'
 import * as S from './styles'
 import Tooltip from 'components/Tooltip'
 import Logo from 'components/Logo'
@@ -10,7 +11,7 @@ import { useAuth } from 'contexts/AuthContext'
 const HomeTemplate = () => {
   const { ToggleTheme } = useTheme()
 
-  const { loginWithGitHub } = useAuth()
+  const { loginWithGoogle } = useAuth()
 
   return (
     <S.Wrapper>
@@ -33,16 +34,14 @@ const HomeTemplate = () => {
             <S.TitleContainer>
               <button type="button" onClick={ToggleTheme}>
                 <Tooltip text="Clique aqui para mudar o tema">
-                  <Github size={55} />
                 </Tooltip>
               </button>
 
-              <span>Faça login com o Github para começar</span>
             </S.TitleContainer>
 
             <S.LoginContainer>
-              <S.ButtonLogin type="button" onClick={loginWithGitHub}>
-                <Github color="#FFF" size={32} /> Sign in with Github
+              <S.ButtonLogin type="button" onClick={loginWithGoogle}>
+                <Google color="#FFF" size={32} /> Entre com o Google
               </S.ButtonLogin>
             </S.LoginContainer>
           </div>

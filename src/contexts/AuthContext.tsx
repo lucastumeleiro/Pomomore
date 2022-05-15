@@ -17,7 +17,7 @@ interface AuthContextProps {
     photo: string
     email: string
   }
-  loginWithGitHub: () => void
+  loginWithGoogle: () => void
   logout: () => void
 }
 
@@ -35,7 +35,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     firebase.auth().onAuthStateChanged((user) => {
       if (user) {
         setUserData({
-          name: user.displayName || 'Sem Nome no gitHub',
+          name: user.displayName || 'Sem Nome informado.',
           photo: user.photoURL,
           email: user.email
         })
@@ -48,8 +48,8 @@ export function AuthProvider({ children }: AuthProviderProps) {
     })
   }, [])
 
-  const loginWithGitHub = useCallback(async () => {
-    const provider = new firebase.auth.GithubAuthProvider()
+  const loginWithGoogle = useCallback(async () => {
+    const provider = new firebase.auth.GoogleAuthProvider()
 
     return await firebase
       .auth()
@@ -74,7 +74,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       value={{
         isLogged,
         userData,
-        loginWithGitHub,
+        loginWithGoogle,
         logout
       }}
     >
