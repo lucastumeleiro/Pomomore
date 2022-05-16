@@ -7,6 +7,7 @@ declare module 'styled-components' {
       background: string
       backgroundOverlay: string
       backgroundBox: string
+      backgroundBoxIndex:string
       backgroundIndex: string
       inputBackground: string
       backgroundLogo: string
@@ -44,6 +45,7 @@ declare module 'styled-components' {
       background: string
       backgroundOverlay: string
       backgroundBox: string
+      backgroundBoxIndex:string
       backgroundIndex: string
       inputBackground: string
       backgroundLogo: string
