@@ -78,7 +78,7 @@ export const LinkMenu = styled.a<LinkMenuProps>`
     left: -19px;
     height: 100%;
     border-radius: 0 10px 10px 0;
-    background: ${({ theme, active }) => (active ? theme.colors.green : 'none')};
+    background: theme.colors.green;
     transition: all 0.3s;
   }
   @media (max-width: 720px) {

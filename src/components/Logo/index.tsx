@@ -1,7 +1,4 @@
-import { useTheme } from 'contexts/ThemeContext'
-
 const Logo = () => {
-  const { theme } = useTheme()
 
   return (
     <svg width="541" height="541" viewBox="0 0 541 541" fill="none" xmlns="http://www.w3.org/2000/svg">
