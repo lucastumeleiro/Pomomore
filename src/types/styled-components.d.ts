@@ -56,8 +56,6 @@ declare module 'styled-components' {
       title: string
       red: string
       green: string
-      blue: string
-      blueDark: string
     }
     boxShadow: string
   }
