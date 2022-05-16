@@ -1,6 +1,5 @@
-import { useAuth } from 'contexts/AuthContext'
-// import { GetServerSideProps } from 'next'
 import React from 'react'
+import { useAuth } from 'contexts/AuthContext'
 import DashboardTemplate from 'templates/Dashboard'
 import HomeTemplate from 'templates/Home'
 

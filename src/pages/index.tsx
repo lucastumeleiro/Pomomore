@@ -10,9 +10,6 @@ export default function Home() {
   return (
     <>
       {isLogged ? router.push('/dashboard') : <HomeTemplate />}
-      {/* {userData === null ? <HomeTemplate /> : <DashboardTemplate />} */}
-
-      {/* {userData === null && <HomeTemplate />} */}
     </>
   )
 }
