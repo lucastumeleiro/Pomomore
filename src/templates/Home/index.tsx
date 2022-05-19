@@ -4,7 +4,6 @@ import { useTheme } from 'contexts/ThemeContext'
 import { Google } from 'styled-icons/bootstrap'
 import * as S from './styles'
 import Tooltip from 'components/Tooltip'
-import Logo from 'components/Logo'
 import SEO from 'components/SEO'
 import { useAuth } from 'contexts/AuthContext'
 

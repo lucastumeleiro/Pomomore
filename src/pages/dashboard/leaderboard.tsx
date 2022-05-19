@@ -1,4 +1,3 @@
-import React from 'react'
 import { useAuth } from 'contexts/AuthContext'
 import api from 'services/api'
 import HomeTemplate from 'templates/Home'
@@ -18,7 +17,7 @@ export default function Leaderboard(props: LeaderboardTemplateProps) {
   )
 }
 
-export async function getServerSideProps () {
+export async function getStaticProps () {
   const { data } = await api.get('/api/user')
 
   return {
