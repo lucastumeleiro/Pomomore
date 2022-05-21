@@ -1,8 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { createContext, ReactNode, useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
-
-// import Cookies from 'js-cookie'
 import challenges from 'data/challenges.json'
 import axios from 'axios'
 import { useAuth } from './AuthContext'
@@ -11,9 +8,6 @@ import Modal from 'components/Modal'
 
 type ChallengesProviderProps = {
   children: ReactNode
-  // level: number
-  // currentExperience: number
-  // challengesCompleted: number
 }
 
 type ChallengeProps = {
@@ -54,17 +48,6 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2)
   const [loading, setLoading] = useState(true)
 
-  //pedindo permissão
-  // useEffect(() => {
-  //   Notification.requestPermission()
-  // }, [])
-
-  //salvando Cookies
-  // useEffect(() => {
-  //   Cookies.set('level', String(level))
-  //   Cookies.set('currentExperience', String(currentExperience))
-  //   Cookies.set('challengesCompleted', String(challengesCompleted))
-  // }, [level, currentExperience, challengesCompleted])
 
   useEffect(() => {
     if (loading) {

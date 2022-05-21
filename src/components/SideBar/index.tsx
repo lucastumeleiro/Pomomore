@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Switch from 'react-switch'
 import { useTheme } from 'contexts/ThemeContext'
 import { HomeAlt } from '@styled-icons/boxicons-regular/HomeAlt'
+import { CardChecklist } from '@styled-icons/bootstrap/CardChecklist'
 
 import { Award } from '@styled-icons/boxicons-regular/Award'
 import { useRouter } from 'next/router'
@@ -35,6 +36,10 @@ const SideBar = () => {
             <Award />
           </S.LinkMenu>
         </Link>
+
+        <S.LinkForm target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdQYI15cwgq-IWjjrj5_QMUU-66PbCKYXuRUcVWM3YnObUw9A/viewform?usp=sf_link">
+          <CardChecklist />
+        </S.LinkForm>
       </S.WrapperNavigation>
 
       <Switch

@@ -125,6 +125,7 @@ export const TitleContainer = styled.div`
 
 export const LoginContainer = styled.form`
   display: flex;
+  justify-content: center;
 
   input {
     border: 0;

@@ -63,7 +63,6 @@ export function AuthProvider({ children }: AuthProviderProps) {
     return await firebase
       .auth()
       .signOut()
-      // eslint-disable-next-line @typescript-eslint/no-empty-function
       .then(() => {
         window.location.href = '/dashboard'
       })

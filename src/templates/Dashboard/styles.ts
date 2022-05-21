@@ -43,11 +43,6 @@ export const Section = styled.section`
   }
 `
 export const LeftContainer = styled.div`
-  /* ${media.lessThan('medium')`
-    width: 100%;
-    margin-top: 4rem;
-
-  `} */
 `
 
 export const RightContainer = styled.div`

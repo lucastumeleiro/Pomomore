@@ -13,7 +13,7 @@ const Profile = () => {
 
   return (
     <S.Wrapper>
-      <S.ProfileImage src={userData?.photo} alt={userData?.name} />
+      <S.ProfileImage src={userData?.photo} alt={userData?.name}/>
 
       <div>
         <strong>{userData?.name}</strong>
