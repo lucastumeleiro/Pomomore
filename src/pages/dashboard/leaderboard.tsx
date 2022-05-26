@@ -17,12 +17,10 @@ export default function Leaderboard(props: LeaderboardTemplateProps) {
   )
 }
 
-export async function getStaticProps () {
+export async function getStaticProps() {
   const { data } = await api.get('/api/user')
 
   return {
-    revalidate: 60,
-
     props: {
       users: data.users
     }

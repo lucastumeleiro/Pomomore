@@ -52,7 +52,7 @@ export function ChallengesProvider({ children }: ChallengesProviderProps) {
   useEffect(() => {
     if (loading) {
       axios
-        .get(`/api/user/${userData.email}`)
+        .get(`/api/user/${userData?.email}`)
         .then((response) => {
           setChallengesCompleted(response.data.user.challengesCompleted || 0)
           setCurrentExperience(response.data.user.currentExp || 0)

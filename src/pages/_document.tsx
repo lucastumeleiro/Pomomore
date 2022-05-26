@@ -40,8 +40,6 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
 
-          <link rel="manifest" href="manifest.json" />
-
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Rajdhani:wght@700&display=swap"
