@@ -21,6 +21,8 @@ export async function getStaticProps() {
   const { data } = await api.get('/api/user')
 
   return {
+    revalidate: 1,
+
     props: {
       users: data.users
     }
