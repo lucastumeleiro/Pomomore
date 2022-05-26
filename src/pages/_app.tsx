@@ -12,12 +12,16 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <AuthProvider>
 
-      <ThemesProvider>
-        <GlobalStyles />
-        <ToastContainer />
+      <ChallengesProvider>
+        <CountdownProvider>
+          <ThemesProvider>
+            <GlobalStyles />
+            <ToastContainer />
 
-        <Component {...pageProps} />
-      </ThemesProvider>
+            <Component {...pageProps} />
+          </ThemesProvider>
+        </CountdownProvider>
+      </ChallengesProvider>
 
     </AuthProvider>
   )
