@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 
 export const Overlay = styled.div`
   ${({ theme }) => css`
-    background: ${theme.colors.backgroundOverlay};
+    background: ${theme.colors?.backgroundOverlay};
     position: fixed;
     top: 0;
     bottom: 0;
@@ -17,7 +17,7 @@ export const Overlay = styled.div`
 
 export const Wrapper = styled.div`
   ${({ theme }) => css`
-    background-color: ${theme.colors.backgroundBox};
+    background-color: #202024;
     width: 100%;
     max-width: 400px;
     padding: 2rem 3rem;
@@ -29,19 +29,19 @@ export const Wrapper = styled.div`
     header {
       font-size: 8.78rem;
       font-weight: 600;
-      color: ${theme.colors.grayLine};
+      color: ${theme.colors?.grayLine};
       background: url('/icons/levelup.svg') no-repeat center;
       background-size: contain;
     }
 
     strong {
       font-size: 2.25rem;
-      color: ${theme.colors.grayLine};
+      color: ${theme.colors?.grayLine};
     }
 
     p {
       font-size: 1.25rem;
-      color: ${theme.colors.grayLine};
+      color: ${theme.colors?.grayLine};
       margin-top: 0.25rem;
     }
 
@@ -52,7 +52,7 @@ export const Wrapper = styled.div`
       background: transparent;
       border: 0;
       font-size: 0;
-      outline-color: ${theme.colors.backgroundBox};
+      outline-color: ${theme.colors?.backgroundBox};
     }
   `}
 `
