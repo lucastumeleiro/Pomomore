@@ -5,23 +5,17 @@ import { AuthProvider } from 'contexts/AuthContext'
 import { ThemesProvider } from 'contexts/ThemeContext'
 import GlobalStyles from 'styles/global'
 import { ToastContainer } from 'react-toastify'
-import { ChallengesProvider } from 'contexts/ChallengesContext'
-import { CountdownProvider } from 'contexts/CountdownContext'
 
 function App({ Component, pageProps }: AppProps) {
   return (
     <AuthProvider>
 
-      <ChallengesProvider>
-        <CountdownProvider>
-          <ThemesProvider>
-            <GlobalStyles />
-            <ToastContainer />
+      <ThemesProvider>
+        <GlobalStyles />
+        <ToastContainer />
 
-            <Component {...pageProps} />
-          </ThemesProvider>
-        </CountdownProvider>
-      </ChallengesProvider>
+        <Component {...pageProps} />
+      </ThemesProvider>
 
     </AuthProvider>
   )

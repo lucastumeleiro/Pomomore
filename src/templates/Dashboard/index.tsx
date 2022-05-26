@@ -29,6 +29,7 @@ const DashboardTemplate = () => {
         <S.Content>
           <ExperienceBar />
 
+          <CountdownProvider>
             <S.Section>
               <S.LeftContainer>
                 <Profile />
@@ -40,6 +41,7 @@ const DashboardTemplate = () => {
                 <ChallengeBox />
               </S.RightContainer>
             </S.Section>
+          </CountdownProvider>
         </S.Content>
       </S.Wrapper>
     </ChallengesProvider>
